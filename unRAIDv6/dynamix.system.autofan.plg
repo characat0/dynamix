@@ -104,6 +104,7 @@ Dynamix System Autofan - Fan speed control. Makes use of autofan script contribu
 
 # Remove old 'source' packages
 MD5=$(md5sum &source;.txz 2>/dev/null|grep -Po '^\S+')
+echo $MD5
 if [[ $MD5 != &MD5; ]]; then
   rm -f &source;*.txz
 fi
